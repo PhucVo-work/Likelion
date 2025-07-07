@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* .menu {
+  display: block;
+  width: 80%;
+  background-color: black;
+  margin: auto;
+  padding: 25px;
+  border-radius: 3px;
+  cursor: pointer;  
+}
+
+.menu-item {
+  color: white;
+  font-size: 24px;
+  display: inline-block;
+}
+
+.menu > .menu-item {
+  color: white;
+  font-size: 24px;
+  display: inline-block;
+  width: 19%;
+}
+
+li[class="menu-item"]:hover {
+  color: gray;
+  font-weight: 800;
+}
+
+.menu-item::after {
+  margin-left: 4px;
+  content: "\f105";
+  font-family: "FontAwesome";
+  display: inline-block;
+  transition: transform 0.3s ease-in;
+}
+
+.menu-item:hover::after{
+  transform: rotateX('90deg')
+}
+
+/* reponsive for tablet 768px < width < 1024px */
+/* @media (max-width: 1023px) and (min-width: 768px) {
+  .menu{
+    margin: auto;
+  }
+  .menu-item {
+    font-size: 28px;
+    width: 15%;
+    text-align: center;
+  }
+} */
+
+/* reponsive for mobile width < 768px */
+/* @media (max-width: 767px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu > .menu-item {
+    padding: 15px 0 15px 0;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid white;
+  }
+
+  .menu-item::after {
+    margin-left: 4px;
+    content: "\f107";
+    font-family: "FontAwesome";
+  }
+
+  .menu-item:last-child{
+    border: none;
+  }
+}  */
+
+/* 
+.box {
+  padding: 20px;
+  width: 100px;
+  color: white;
+}
+
+.box-1 {
+  position: static;
+  background-color: olive;
+}
+
+.box-2 {
+  position: relative;
+  top: 30px;
+  left: 20px;
+  background-color: black;
+}
+
+.box-3 {
+  position: relative;
+  top: 18px;
+  left: 20px;
+  background-color: red;
+}
+
+.box-4 {
+  position: relative;
+  top: 50px;
+  left: 20px;
+  background-color: black;
+}
+
+.box-5 {
+  position: absolute;
+  display: none;
+  top: 18px;
+  left: 20px;
+  background-color: red;
+}
+
+.box-4:hover .box-5 {
+  display: block;
+} */
+
+/* reponsive breakpoints */
+/* .., 320, 480, 720, 900, 1024, 1200, .. */
+
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+aside{
+  flex: 1 1 200px;
+  height: 100vh;
+  background-color: blue;
+}
+
+main{
+  flex: 4 1 auto;
+  height: 100vh;
+  background-color: aqua;
+}
