@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    /* Modules */
+    "target": "ES2016",
+    "module": "NodeNext", // Use "NodeNext" for ES modules or "CommonJS" for CommonJS
+    "moduleResolution": "NodeNext", // Must match "module"
+    "rootDir": "./src",
+    "outDir": "./public",
+
+    /* JavaScript Support */
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+
+    /* Emit */
+    "sourceMap": true,
+    "removeComments": true,
+
+    /* Interop */
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    /* Node.js Types */
+    "types": ["node"]
+  },
+  "include": ["src"]
+}
