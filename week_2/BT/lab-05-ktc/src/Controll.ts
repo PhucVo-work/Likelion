@@ -24,14 +24,24 @@ function handleMenu(choice: string): void {
   switch (choice) {
     case "1":
       // Arrow function dùng trong callback
-      rl.question("Tên khóa học: ", (name) => {
-        rl.question("Giảng viên: ", (instructor) => {
-          rl.question("Thời lượng: ", (dur) => {
-            manager.addCourse(name, instructor, parseFloat(dur));
+      rl.question("Tên khóa học: ", (nameInput) => {
+        const name = nameInput.trim() || "Chưa được đặt tên";
+
+        rl.question("Giảng viên: ", (instructorInput) => {
+          const instructor =
+            instructorInput.trim() || "Chưa xác định giảng viên";
+
+          rl.question("Thời lượng: ", (durationInput) => {
+            const duration = durationInput.trim()
+              ? parseFloat(durationInput)
+              : 0;
+
+            manager.addCourse(name, instructor, duration);
             showMenu();
           });
         });
       });
+      
       break;
 
     case "2":

@@ -10,12 +10,7 @@ class courseManager {
     instructor: string = "Chưa xác định giảng viên",
     duration: number = 0
   ): void {
-    const newCourse = new Course(
-      this.nextId++,
-      (name = "Chưa được đặt tên"),
-      (instructor = "Chưa xác định giảng viên"),
-      duration = 0
-    );
+    const newCourse = new Course(this.nextId++, name, instructor, duration);
     this.courses.push(newCourse);
   }
 

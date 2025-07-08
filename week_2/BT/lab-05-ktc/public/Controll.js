@@ -33,10 +33,15 @@ function handleMenu(choice) {
     switch (choice) {
         case "1":
             // Arrow function dùng trong callback
-            rl.question("Tên khóa học: ", function (name) {
-                rl.question("Giảng viên: ", function (instructor) {
-                    rl.question("Thời lượng: ", function (dur) {
-                        manager.addCourse(name, instructor, parseFloat(dur));
+            rl.question("Tên khóa học: ", function (nameInput) {
+                var name = nameInput.trim() || "Chưa được đặt tên";
+                rl.question("Giảng viên: ", function (instructorInput) {
+                    var instructor = instructorInput.trim() || "Chưa xác định giảng viên";
+                    rl.question("Thời lượng: ", function (durationInput) {
+                        var duration = durationInput.trim()
+                            ? parseFloat(durationInput)
+                            : 0;
+                        manager.addCourse(name, instructor, duration);
                         showMenu();
                     });
                 });

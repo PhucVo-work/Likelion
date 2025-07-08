@@ -11,7 +11,7 @@ var courseManager = /** @class */ (function () {
         if (name === void 0) { name = "Chưa được đặt tên"; }
         if (instructor === void 0) { instructor = "Chưa xác định giảng viên"; }
         if (duration === void 0) { duration = 0; }
-        var newCourse = new Course_1.default(this.nextId++, (name = "Chưa được đặt tên"), (instructor = "Chưa xác định giảng viên"), duration = 0);
+        var newCourse = new Course_1.default(this.nextId++, name, instructor, duration);
         this.courses.push(newCourse);
     };
     // cập nhật khóa học
